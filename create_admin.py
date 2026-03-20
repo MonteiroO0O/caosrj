@@ -9,7 +9,7 @@ from django.contrib.auth.models import User
 # Configurações do seu novo Admin
 username = 'ADMINISTRADORCAOS' # Pode mudar se quiser
 email = 'admin@caosrj.com'
-password = 'SuaSenhaAqui123' # COLOQUE UMA SENHA FORTE AQUI
+password = 'EQUIPEGCREINA2026' # COLOQUE UMA SENHA FORTE AQUI
 
 if not User.objects.filter(username=username).exists():
     User.objects.create_superuser(username, email, password)
