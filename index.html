@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTA CAOS RJ | O Melhor Servidor de RP e Baques</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'caos-dark': '#070b14',
+                        'caos-panel': 'rgba(15, 23, 42, 0.7)', /* Fundo de vidro */
+                        'caos-blue': '#0059ff',
+                        'caos-cyan': '#00d4ff',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #050810;
+            color: #e2e8f0;
+            /* Fundo simulando a noite carioca, pode trocar por uma imagem de fundo escurecida do seu server */
+            background-image: radial-gradient(circle at top center, #111a2e 0%, #050810 100%);
+            background-attachment: fixed;
+        }
+        /* Efeito Neon */
+        .neon-text { text-shadow: 0 0 10px #0059ff, 0 0 20px #00d4ff; }
+        .neon-border { box-shadow: 0 0 15px rgba(0, 212, 255, 0.3); border: 1px solid rgba(0, 212, 255, 0.5); }
+        .glass-panel { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+    </style>
+</head>
+<body class="font-sans antialiased flex flex-col min-h-screen">
+
+    <nav class="sticky top-0 z-50 glass-panel bg-caos-dark/80 border-b border-caos-cyan/20 px-4 py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-black italic tracking-widest uppercase">
+                <span class="text-white">CAOS</span><span class="text-caos-cyan neon-text"> RJ</span>
+            </h1>
+            <div class="hidden md:flex space-x-6 font-bold text-sm uppercase tracking-wide">
+                <a href="#sobre" class="hover:text-caos-cyan transition">Sobre</a>
+                <a href="#staff" class="hover:text-caos-cyan transition">Staff</a>
+                <a href="#jornal" class="hover:text-caos-cyan transition">Jornal</a>
+                <a href="#guerras" class="hover:text-caos-cyan transition">Guerras</a>
+            </div>
+            <a href="/admin" class="hidden md:block bg-caos-blue hover:bg-caos-cyan text-white px-4 py-2 rounded text-xs font-bold transition">Painel Admin</a>
+        </div>
+    </nav>
+
+    <header class="container mx-auto px-4 py-20 text-center flex-grow">
+        <img src="https://i.imgur.com/sua_logo_aqui.png" alt="Logo CAOS RJ" class="mx-auto mb-8 w-64 md:w-96 drop-shadow-2xl hover:scale-105 transition duration-500">
+        
+        <h2 class="text-4xl md:text-6xl font-black mb-4 uppercase tracking-tight">O Fim da Paz, <br class="md:hidden"> O Início do <span class="text-caos-cyan neon-text">CAOS</span></h2>
+        <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10">Servidor focado em Baques, Guerras e RP de Facções. Fundado em 2026 pela Alta Cúpula: LMK, VG, 244 e BARBUDO.</p>
+        
+        <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+            <a href="https://discord.gg/gtacaosrj" target="_blank" class="w-full md:w-auto bg-[#5865F2] hover:bg-[#4752C4] text-white font-bold py-4 px-8 rounded-lg uppercase tracking-wide transition transform hover:scale-105 neon-border">
+                <i class="fab fa-discord mr-2"></i> Nosso Discord
+            </a>
+            <a href="https://chat.whatsapp.com/BVjGnESaA59I6uTLTo1lCi" target="_blank" class="w-full md:w-auto bg-[#25D366] hover:bg-[#1DA851] text-white font-bold py-4 px-8 rounded-lg uppercase tracking-wide transition transform hover:scale-105 neon-border">
+                <i class="fab fa-whatsapp mr-2"></i> Comunidade WhatsApp
+            </a>
+        </div>
+    </header>
+
+    <section id="guerras" class="py-16 px-4 bg-caos-dark/50">
+        <div class="container mx-auto">
+            <h3 class="text-3xl md:text-4xl font-bold text-center mb-10 uppercase border-b-2 border-caos-cyan inline-block pb-2">Calendário de <span class="text-caos-cyan">Guerras</span></h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="glass-panel bg-caos-panel border border-caos-blue/30 rounded-xl overflow-hidden hover:neon-border transition duration-300">
+                    <img src="https://via.placeholder.com/400x200/000/00d4ff?text=Imagem+da+Guerra" alt="Guerra" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Sábado</span>
+                            <span class="text-caos-cyan font-bold"><i class="far fa-clock"></i> 20:00</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">Invasão Complexo do Alemão</h4>
+                        <p class="text-gray-400 text-sm">Concentração na base principal. Levem armamento pesado e colete.</p>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="staff" class="py-16 px-4">
+        <div class="container mx-auto">
+            <h3 class="text-3xl md:text-4xl font-bold text-center mb-10 uppercase border-b-2 border-caos-cyan inline-block pb-2">Nossa <span class="text-caos-cyan">Equipe</span></h3>
+            
+            <div class="mb-12">
+                <h4 class="text-2xl font-bold text-center mb-6 text-yellow-500 uppercase">🛡️ Alta Cúpula 🛡️</h4>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                    <div class="flex flex-col items-center p-4 glass-panel bg-caos-panel rounded-lg border border-yellow-500/30">
+                        <div class="w-24 h-24 bg-gray-800 rounded-full mb-3 border-2 border-yellow-500 overflow-hidden">
+                            <img src="https://via.placeholder.com/150" alt="LMK" class="w-full h-full object-cover">
+                        </div>
+                        <h5 class="font-bold text-lg text-white">LMK.GC</h5>
+                        <span class="text-xs text-yellow-500 font-bold uppercase">Dono/Programador</span>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black py-8 mt-auto border-t border-caos-cyan/20">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl font-black italic tracking-widest uppercase mb-4 opacity-50">
+                CAOS<span class="text-caos-cyan"> RJ</span>
+            </h2>
+            <p class="text-sm text-gray-500 font-bold tracking-widest">
+                &copy; 2026 TODOS OS DIREITOS RESERVADOS GTA CAOS RJ.
+            </p>
+            <p class="text-xs text-gray-600 mt-2">
+                Desenvolvido por LMK, VG, 244 e Barbudo.
+            </p>
+        </div>
+    </footer>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</body>
+</html>
